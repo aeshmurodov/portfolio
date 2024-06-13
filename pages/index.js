@@ -17,7 +17,6 @@ import Collaboration from "@/components/Collaboration/Collabaration";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Scripts from "@/components/Scripts/Scripts";
-import { displayFancyLogs } from "utils";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -32,8 +31,6 @@ export default function Home() {
     setTimeout(() => {
       setIsLoading(false);
     }, 2600);
-
-    displayFancyLogs();
   }, []);
 
   useEffect(() => {
